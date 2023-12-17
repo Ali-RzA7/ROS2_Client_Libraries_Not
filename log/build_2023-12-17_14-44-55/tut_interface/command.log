@@ -1,0 +1,6 @@
+Invoking command in '/home/user/ros2_ws2/build/tut_interface': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/user/ros2_ws2/src/tut_interface -DCMAKE_INSTALL_PREFIX=/home/user/ros2_ws2/install/tut_interface
+Invoked command in '/home/user/ros2_ws2/build/tut_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/user/ros2_ws2/src/tut_interface -DCMAKE_INSTALL_PREFIX=/home/user/ros2_ws2/install/tut_interface
+Invoking command in '/home/user/ros2_ws2/build/tut_interface': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/user/ros2_ws2/build/tut_interface -- -j16 -l16
+Invoked command in '/home/user/ros2_ws2/build/tut_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/user/ros2_ws2/build/tut_interface -- -j16 -l16
+Invoking command in '/home/user/ros2_ws2/build/tut_interface': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/user/ros2_ws2/build/tut_interface
+Invoked command in '/home/user/ros2_ws2/build/tut_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/user/ros2_ws2/build/tut_interface

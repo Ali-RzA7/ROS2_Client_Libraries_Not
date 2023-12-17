@@ -1,0 +1,382 @@
+[0.000000] (-) TimerEvent: {}
+[0.000237] (aliriza) JobQueued: {'identifier': 'aliriza', 'dependencies': OrderedDict()}
+[0.000300] (tut_interface) JobQueued: {'identifier': 'tut_interface', 'dependencies': OrderedDict()}
+[0.000344] (aliriza) JobStarted: {'identifier': 'aliriza'}
+[0.099772] (-) TimerEvent: {}
+[0.105386] (tut_interface) JobStarted: {'identifier': 'tut_interface'}
+[0.199994] (-) TimerEvent: {}
+[0.300523] (-) TimerEvent: {}
+[0.401004] (-) TimerEvent: {}
+[0.446157] (tut_interface) JobProgress: {'identifier': 'tut_interface', 'progress': 'cmake'}
+[0.446484] (tut_interface) Command: {'cmd': ['/usr/bin/cmake', '/home/user/ros2_ws2/src/tut_interface', '-DCMAKE_INSTALL_PREFIX=/home/user/ros2_ws2/install/tut_interface'], 'cwd': '/home/user/ros2_ws2/build/tut_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('SSH_AGENT_PID', '1367'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/user'), ('OLDPWD', '/home/user/ros2_ws2/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1028'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'user'), ('JOURNAL_STREAM', '8:46193'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/user-ROG-Strix-G513IC-G513IC:@/tmp/.ICE-unix/1441,unix/user-ROG-Strix-G513IC-G513IC:/tmp/.ICE-unix/1441'), ('INVOCATION_ID', '551dd52c45234894be52d66abb27f711'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5deff04d_254c_4c13_af33_32ed4dbb24ef'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.147'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/ros2_ws2/build/tut_interface'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.501195] (-) TimerEvent: {}
+[0.509895] (tut_interface) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.572516] (tut_interface) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.579008] (tut_interface) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.601274] (-) TimerEvent: {}
+[0.664239] (tut_interface) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.666698] (tut_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.701395] (-) TimerEvent: {}
+[0.751725] (tut_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.767458] (tut_interface) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.767699] (tut_interface) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.769275] (tut_interface) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.784691] (aliriza) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/aliriza', 'build', '--build-base', '/home/user/ros2_ws2/build/aliriza/build', 'install', '--record', '/home/user/ros2_ws2/build/aliriza/install.log', '--install-scripts', '$base/lib/aliriza', '--single-version-externally-managed'], 'cwd': '/home/user/ros2_ws2/src/aliriza', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'user', 'SSH_AGENT_PID': '1367', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/user', 'OLDPWD': '/home/user/ros2_ws2/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1028', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'user', 'JOURNAL_STREAM': '8:46193', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'user', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/user-ROG-Strix-G513IC-G513IC:@/tmp/.ICE-unix/1441,unix/user-ROG-Strix-G513IC-G513IC:/tmp/.ICE-unix/1441', 'INVOCATION_ID': '551dd52c45234894be52d66abb27f711', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/5deff04d_254c_4c13_af33_32ed4dbb24ef', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.147', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/user/ros2_ws2/build/aliriza', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/user/ros2_ws2/build/aliriza/prefix_override:/home/user/ros2_ws2/install/aliriza/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[0.801573] (-) TimerEvent: {}
+[0.866140] (tut_interface) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.866875] (tut_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.901661] (-) TimerEvent: {}
+[0.936584] (aliriza) StdoutLine: {'line': b'running egg_info\n'}
+[0.937008] (aliriza) StdoutLine: {'line': b'writing ../../build/aliriza/aliriza.egg-info/PKG-INFO\n'}
+[0.937277] (aliriza) StdoutLine: {'line': b'writing dependency_links to ../../build/aliriza/aliriza.egg-info/dependency_links.txt\n'}
+[0.937546] (aliriza) StdoutLine: {'line': b'writing entry points to ../../build/aliriza/aliriza.egg-info/entry_points.txt\n'}
+[0.937707] (aliriza) StdoutLine: {'line': b'writing requirements to ../../build/aliriza/aliriza.egg-info/requires.txt\n'}
+[0.937810] (aliriza) StdoutLine: {'line': b'writing top-level names to ../../build/aliriza/aliriza.egg-info/top_level.txt\n'}
+[0.953193] (tut_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.963966] (aliriza) StdoutLine: {'line': b"reading manifest file '../../build/aliriza/aliriza.egg-info/SOURCES.txt'\n"}
+[0.964246] (aliriza) StdoutLine: {'line': b"writing manifest file '../../build/aliriza/aliriza.egg-info/SOURCES.txt'\n"}
+[0.964446] (aliriza) StdoutLine: {'line': b'running build\n'}
+[0.964556] (aliriza) StdoutLine: {'line': b'running build_py\n'}
+[0.964666] (aliriza) StdoutLine: {'line': b'copying aliriza/publisher.py -> /home/user/ros2_ws2/build/aliriza/build/lib/aliriza\n'}
+[0.964860] (aliriza) StdoutLine: {'line': b'copying aliriza/subscriber.py -> /home/user/ros2_ws2/build/aliriza/build/lib/aliriza\n'}
+[0.965004] (aliriza) StdoutLine: {'line': b'running install\n'}
+[0.965270] (aliriza) StdoutLine: {'line': b'running install_lib\n'}
+[0.965873] (aliriza) StdoutLine: {'line': b'copying /home/user/ros2_ws2/build/aliriza/build/lib/aliriza/publisher.py -> /home/user/ros2_ws2/install/aliriza/lib/python3.8/site-packages/aliriza\n'}
+[0.966022] (aliriza) StdoutLine: {'line': b'copying /home/user/ros2_ws2/build/aliriza/build/lib/aliriza/subscriber.py -> /home/user/ros2_ws2/install/aliriza/lib/python3.8/site-packages/aliriza\n'}
+[0.966322] (aliriza) StdoutLine: {'line': b'byte-compiling /home/user/ros2_ws2/install/aliriza/lib/python3.8/site-packages/aliriza/publisher.py to publisher.cpython-38.pyc\n'}
+[0.967427] (aliriza) StdoutLine: {'line': b'byte-compiling /home/user/ros2_ws2/install/aliriza/lib/python3.8/site-packages/aliriza/subscriber.py to subscriber.cpython-38.pyc\n'}
+[0.967704] (aliriza) StdoutLine: {'line': b'running install_data\n'}
+[0.968098] (aliriza) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.969233] (aliriza) StdoutLine: {'line': b"removing '/home/user/ros2_ws2/install/aliriza/lib/python3.8/site-packages/aliriza-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[0.969461] (aliriza) StdoutLine: {'line': b'Copying ../../build/aliriza/aliriza.egg-info to /home/user/ros2_ws2/install/aliriza/lib/python3.8/site-packages/aliriza-0.0.0-py3.8.egg-info\n'}
+[0.969644] (tut_interface) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.969931] (aliriza) StdoutLine: {'line': b'running install_scripts\n'}
+[0.970129] (tut_interface) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.971526] (tut_interface) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.982046] (aliriza) StdoutLine: {'line': b'Installing listener script to /home/user/ros2_ws2/install/aliriza/lib/aliriza\n'}
+[0.982305] (aliriza) StdoutLine: {'line': b'Installing talker script to /home/user/ros2_ws2/install/aliriza/lib/aliriza\n'}
+[0.982470] (aliriza) StdoutLine: {'line': b"writing list of installed files to '/home/user/ros2_ws2/build/aliriza/install.log'\n"}
+[0.994950] (tut_interface) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.995191] (tut_interface) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.001771] (-) TimerEvent: {}
+[1.004729] (aliriza) CommandEnded: {'returncode': 0}
+[1.102613] (-) TimerEvent: {}
+[1.110790] (aliriza) JobEnded: {'identifier': 'aliriza', 'rc': 0}
+[1.157009] (tut_interface) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[1.180757] (tut_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.189803] (tut_interface) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.202743] (-) TimerEvent: {}
+[1.303076] (-) TimerEvent: {}
+[1.306011] (tut_interface) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[1.338798] (tut_interface) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[1.403228] (-) TimerEvent: {}
+[1.412242] (tut_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.479923] (tut_interface) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[1.503386] (-) TimerEvent: {}
+[1.512953] (tut_interface) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[1.603489] (-) TimerEvent: {}
+[1.676158] (tut_interface) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[1.703615] (-) TimerEvent: {}
+[1.803967] (-) TimerEvent: {}
+[1.896474] (tut_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.904075] (-) TimerEvent: {}
+[1.986037] (tut_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.004210] (-) TimerEvent: {}
+[2.009065] (tut_interface) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[2.011171] (tut_interface) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[2.046810] (tut_interface) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[2.047245] (tut_interface) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.047470] (tut_interface) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[2.047613] (tut_interface) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[2.071586] (tut_interface) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.104330] (-) TimerEvent: {}
+[2.152041] (tut_interface) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[2.164806] (tut_interface) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.166066] (tut_interface) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.166814] (tut_interface) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.170309] (tut_interface) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.204457] (-) TimerEvent: {}
+[2.228073] (tut_interface) StdoutLine: {'line': b'-- Generating done\n'}
+[2.230220] (tut_interface) StdoutLine: {'line': b'-- Build files have been written to: /home/user/ros2_ws2/build/tut_interface\n'}
+[2.238246] (tut_interface) CommandEnded: {'returncode': 0}
+[2.239258] (tut_interface) JobProgress: {'identifier': 'tut_interface', 'progress': 'build'}
+[2.241080] (tut_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/ros2_ws2/build/tut_interface', '--', '-j16', '-l16'], 'cwd': '/home/user/ros2_ws2/build/tut_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('SSH_AGENT_PID', '1367'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/user'), ('OLDPWD', '/home/user/ros2_ws2/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1028'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'user'), ('JOURNAL_STREAM', '8:46193'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/user-ROG-Strix-G513IC-G513IC:@/tmp/.ICE-unix/1441,unix/user-ROG-Strix-G513IC-G513IC:/tmp/.ICE-unix/1441'), ('INVOCATION_ID', '551dd52c45234894be52d66abb27f711'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5deff04d_254c_4c13_af33_32ed4dbb24ef'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.147'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/ros2_ws2/build/tut_interface'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[2.292764] (tut_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target tut_interface__cpp\x1b[0m\n'}
+[2.293306] (tut_interface) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.304840] (-) TimerEvent: {}
+[2.310288] (tut_interface) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.404943] (-) TimerEvent: {}
+[2.505224] (-) TimerEvent: {}
+[2.562178] (tut_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target tut_interface__rosidl_generator_c\x1b[0m\n'}
+[2.565992] (tut_interface) StdoutLine: {'line': b'[  4%] Built target tut_interface__cpp\n'}
+[2.574837] (tut_interface) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.575095] (tut_interface) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/tut_interface__rosidl_generator_c.dir/rosidl_generator_c/tut_interface/msg/detail/num__functions.c.o\x1b[0m\n'}
+[2.575227] (tut_interface) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.577182] (tut_interface) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/tut_interface__rosidl_generator_c.dir/rosidl_generator_c/tut_interface/srv/detail/add_three_ints__functions.c.o\x1b[0m\n'}
+[2.577550] (tut_interface) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/tut_interface__rosidl_generator_c.dir/rosidl_generator_c/tut_interface/msg/detail/sphere__functions.c.o\x1b[0m\n'}
+[2.579909] (tut_interface) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.605378] (-) TimerEvent: {}
+[2.632345] (tut_interface) StdoutLine: {'line': b'[ 19%] \x1b[32m\x1b[1mLinking C shared library libtut_interface__rosidl_generator_c.so\x1b[0m\n'}
+[2.671045] (tut_interface) StdoutLine: {'line': b'[ 19%] Built target tut_interface__rosidl_generator_c\n'}
+[2.684078] (tut_interface) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.685299] (tut_interface) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.705508] (-) TimerEvent: {}
+[2.793366] (tut_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target tut_interface__rosidl_typesupport_cpp\x1b[0m\n'}
+[2.805661] (-) TimerEvent: {}
+[2.806183] (tut_interface) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/tut_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tut_interface/srv/add_three_ints__type_support.cpp.o\x1b[0m\n'}
+[2.807757] (tut_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target tut_interface__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[2.808302] (tut_interface) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/tut_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tut_interface/msg/num__type_support.cpp.o\x1b[0m\n'}
+[2.810491] (tut_interface) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/tut_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tut_interface/msg/sphere__type_support.cpp.o\x1b[0m\n'}
+[2.822753] (tut_interface) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/tut_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tut_interface/srv/detail/add_three_ints__type_support.cpp.o\x1b[0m\n'}
+[2.823112] (tut_interface) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/tut_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tut_interface/msg/detail/sphere__type_support.cpp.o\x1b[0m\n'}
+[2.823847] (tut_interface) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/tut_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tut_interface/msg/detail/num__type_support.cpp.o\x1b[0m\n'}
+[2.831008] (tut_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target tut_interface__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[2.849086] (tut_interface) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/tut_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tut_interface/msg/detail/dds_fastrtps/num__type_support.cpp.o\x1b[0m\n'}
+[2.849325] (tut_interface) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/tut_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tut_interface/msg/detail/dds_fastrtps/sphere__type_support.cpp.o\x1b[0m\n'}
+[2.852204] (tut_interface) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/tut_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tut_interface/srv/detail/dds_fastrtps/add_three_ints__type_support.cpp.o\x1b[0m\n'}
+[2.905841] (-) TimerEvent: {}
+[2.952397] (tut_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target tut_interface__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[2.954036] (tut_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target tut_interface__rosidl_typesupport_c\x1b[0m\n'}
+[2.971848] (tut_interface) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/tut_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tut_interface/srv/detail/add_three_ints__type_support.c.o\x1b[0m\n'}
+[2.972220] (tut_interface) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/tut_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tut_interface/msg/detail/sphere__type_support.c.o\x1b[0m\n'}
+[2.972322] (tut_interface) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/tut_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tut_interface/msg/detail/num__type_support.c.o\x1b[0m\n'}
+[2.972401] (tut_interface) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/tut_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/tut_interface/msg/num__type_support.cpp.o\x1b[0m\n'}
+[2.974104] (tut_interface) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/tut_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/tut_interface/msg/sphere__type_support.cpp.o\x1b[0m\n'}
+[2.978438] (tut_interface) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/tut_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/tut_interface/srv/add_three_ints__type_support.cpp.o\x1b[0m\n'}
+[3.006065] (-) TimerEvent: {}
+[3.025592] (tut_interface) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library libtut_interface__rosidl_typesupport_c.so\x1b[0m\n'}
+[3.027113] (tut_interface) StdoutLine: {'line': b'[ 59%] \x1b[32m\x1b[1mLinking C shared library libtut_interface__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.071627] (tut_interface) StdoutLine: {'line': b'[ 59%] Built target tut_interface__rosidl_typesupport_introspection_c\n'}
+[3.077140] (tut_interface) StdoutLine: {'line': b'[ 59%] Built target tut_interface__rosidl_typesupport_c\n'}
+[3.106161] (-) TimerEvent: {}
+[3.106586] (tut_interface) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libtut_interface__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.156460] (tut_interface) StdoutLine: {'line': b'[ 61%] Built target tut_interface__rosidl_typesupport_cpp\n'}
+[3.201322] (tut_interface) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX shared library libtut_interface__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.206292] (-) TimerEvent: {}
+[3.285776] (tut_interface) StdoutLine: {'line': b'[ 63%] Built target tut_interface__rosidl_typesupport_introspection_cpp\n'}
+[3.306443] (-) TimerEvent: {}
+[3.310652] (tut_interface) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libtut_interface__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.406590] (-) TimerEvent: {}
+[3.418532] (tut_interface) StdoutLine: {'line': b'[ 65%] Built target tut_interface__rosidl_typesupport_fastrtps_cpp\n'}
+[3.433089] (tut_interface) StdoutLine: {'line': b'[ 68%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.506708] (-) TimerEvent: {}
+[3.607031] (-) TimerEvent: {}
+[3.667355] (tut_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target tut_interface__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[3.688429] (tut_interface) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/tut_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tut_interface/msg/detail/sphere__type_support_c.cpp.o\x1b[0m\n'}
+[3.689064] (tut_interface) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/tut_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tut_interface/msg/detail/num__type_support_c.cpp.o\x1b[0m\n'}
+[3.690032] (tut_interface) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/tut_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tut_interface/srv/detail/add_three_ints__type_support_c.cpp.o\x1b[0m\n'}
+[3.707170] (-) TimerEvent: {}
+[3.807545] (-) TimerEvent: {}
+[3.907936] (-) TimerEvent: {}
+[3.957050] (tut_interface) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libtut_interface__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[4.008096] (-) TimerEvent: {}
+[4.063125] (tut_interface) StdoutLine: {'line': b'[ 76%] Built target tut_interface__rosidl_typesupport_fastrtps_c\n'}
+[4.077202] (tut_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target tut_interface\x1b[0m\n'}
+[4.092001] (tut_interface) StdoutLine: {'line': b'[ 76%] Built target tut_interface\n'}
+[4.103353] (tut_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target tut_interface__py\x1b[0m\n'}
+[4.108220] (-) TimerEvent: {}
+[4.112001] (tut_interface) StdoutLine: {'line': b'[ 78%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[4.208530] (-) TimerEvent: {}
+[4.308875] (-) TimerEvent: {}
+[4.409166] (-) TimerEvent: {}
+[4.509494] (-) TimerEvent: {}
+[4.541278] (tut_interface) StdoutLine: {'line': b'[ 78%] Built target tut_interface__py\n'}
+[4.552850] (tut_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target tut_interface__python\x1b[0m\n'}
+[4.569229] (tut_interface) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding C object CMakeFiles/tut_interface__python.dir/rosidl_generator_py/tut_interface/msg/_num_s.c.o\x1b[0m\n'}
+[4.575328] (tut_interface) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/tut_interface__python.dir/rosidl_generator_py/tut_interface/msg/_sphere_s.c.o\x1b[0m\n'}
+[4.575608] (tut_interface) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/tut_interface__python.dir/rosidl_generator_py/tut_interface/srv/_add_three_ints_s.c.o\x1b[0m\n'}
+[4.609633] (-) TimerEvent: {}
+[4.661520] (tut_interface) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/tut_interface/libtut_interface__python.so\x1b[0m\n'}
+[4.709774] (-) TimerEvent: {}
+[4.711353] (tut_interface) StdoutLine: {'line': b'[ 87%] Built target tut_interface__python\n'}
+[4.720495] (tut_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target tut_interface__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[4.724469] (tut_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target tut_interface__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[4.726000] (tut_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target tut_interface__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[4.739064] (tut_interface) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/tut_interface__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/tut_interface/_tut_interface_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[4.742437] (tut_interface) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/tut_interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/tut_interface/_tut_interface_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[4.750103] (tut_interface) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/tut_interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/tut_interface/_tut_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[4.809902] (-) TimerEvent: {}
+[4.813250] (tut_interface) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/tut_interface/tut_interface_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.823349] (tut_interface) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/tut_interface/tut_interface_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.832285] (tut_interface) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/tut_interface/tut_interface_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.863632] (tut_interface) StdoutLine: {'line': b'[100%] Built target tut_interface__rosidl_typesupport_introspection_c__pyext\n'}
+[4.871911] (tut_interface) StdoutLine: {'line': b'[100%] Built target tut_interface__rosidl_typesupport_c__pyext\n'}
+[4.902353] (tut_interface) StdoutLine: {'line': b'[100%] Built target tut_interface__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.910007] (-) TimerEvent: {}
+[4.918553] (tut_interface) CommandEnded: {'returncode': 0}
+[4.976405] (tut_interface) JobProgress: {'identifier': 'tut_interface', 'progress': 'install'}
+[4.987829] (tut_interface) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/user/ros2_ws2/build/tut_interface'], 'cwd': '/home/user/ros2_ws2/build/tut_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('SSH_AGENT_PID', '1367'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/user'), ('OLDPWD', '/home/user/ros2_ws2/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1028'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'user'), ('JOURNAL_STREAM', '8:46193'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'user'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/user-ROG-Strix-G513IC-G513IC:@/tmp/.ICE-unix/1441,unix/user-ROG-Strix-G513IC-G513IC:/tmp/.ICE-unix/1441'), ('INVOCATION_ID', '551dd52c45234894be52d66abb27f711'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5deff04d_254c_4c13_af33_32ed4dbb24ef'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.147'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/user/ros2_ws2/build/tut_interface'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[4.995393] (tut_interface) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.995767] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/ament_index/resource_index/rosidl_interfaces/tut_interface\n'}
+[4.995995] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface\n'}
+[4.996189] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/srv\n'}
+[4.996327] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/srv/detail\n'}
+[4.996462] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/srv/detail/add_three_ints__functions.c\n'}
+[4.996597] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/srv/detail/add_three_ints__struct.h\n'}
+[4.996736] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/srv/detail/add_three_ints__functions.h\n'}
+[4.996853] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/srv/detail/add_three_ints__type_support.h\n'}
+[4.997057] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/srv/add_three_ints.h\n'}
+[4.997171] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg\n'}
+[4.997283] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail\n'}
+[4.997393] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail/sphere__functions.h\n'}
+[4.997618] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail/sphere__struct.h\n'}
+[4.997729] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail/num__functions.c\n'}
+[4.997839] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail/num__struct.h\n'}
+[4.997951] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail/sphere__type_support.h\n'}
+[4.998061] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail/sphere__functions.c\n'}
+[4.998172] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail/num__functions.h\n'}
+[4.998284] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail/num__type_support.h\n'}
+[4.998395] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/num.h\n'}
+[4.998505] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/sphere.h\n'}
+[4.998616] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.998728] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/environment/library_path.sh\n'}
+[4.998839] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/environment/library_path.dsv\n'}
+[4.998951] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/lib/libtut_interface__rosidl_generator_c.so\n'}
+[4.999062] (tut_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/user/ros2_ws2/install/tut_interface/lib/libtut_interface__rosidl_generator_c.so" to ""\n'}
+[4.999173] (tut_interface) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws2/install/tut_interface/include/tut_interface\n'}
+[4.999284] (tut_interface) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/srv\n'}
+[4.999394] (tut_interface) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/srv/detail\n'}
+[4.999505] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/srv/detail/add_three_ints__rosidl_typesupport_fastrtps_c.h\n'}
+[4.999649] (tut_interface) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg\n'}
+[4.999770] (tut_interface) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail\n'}
+[4.999884] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail/num__rosidl_typesupport_fastrtps_c.h\n'}
+[5.000006] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail/sphere__rosidl_typesupport_fastrtps_c.h\n'}
+[5.000329] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.000444] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/lib/libtut_interface__rosidl_typesupport_fastrtps_c.so\n'}
+[5.000558] (tut_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/user/ros2_ws2/install/tut_interface/lib/libtut_interface__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[5.000690] (tut_interface) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws2/install/tut_interface/include/tut_interface\n'}
+[5.000910] (tut_interface) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/srv\n'}
+[5.001025] (tut_interface) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/srv/detail\n'}
+[5.001137] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/srv/detail/dds_fastrtps\n'}
+[5.001249] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/srv/detail/add_three_ints__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.001364] (tut_interface) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg\n'}
+[5.001476] (tut_interface) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail\n'}
+[5.001587] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail/num__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.001698] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail/dds_fastrtps\n'}
+[5.001809] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail/sphere__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.001921] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.002032] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/lib/libtut_interface__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.002143] (tut_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/user/ros2_ws2/install/tut_interface/lib/libtut_interface__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[5.002427] (tut_interface) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws2/install/tut_interface/include/tut_interface\n'}
+[5.002536] (tut_interface) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/srv\n'}
+[5.002641] (tut_interface) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/srv/detail\n'}
+[5.002745] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/srv/detail/add_three_ints__type_support.c\n'}
+[5.002850] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/srv/detail/add_three_ints__rosidl_typesupport_introspection_c.h\n'}
+[5.002956] (tut_interface) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg\n'}
+[5.003061] (tut_interface) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail\n'}
+[5.003166] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail/sphere__type_support.c\n'}
+[5.003272] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail/sphere__rosidl_typesupport_introspection_c.h\n'}
+[5.003386] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail/num__type_support.c\n'}
+[5.003491] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail/num__rosidl_typesupport_introspection_c.h\n'}
+[5.003598] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.003704] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/lib/libtut_interface__rosidl_typesupport_introspection_c.so\n'}
+[5.003809] (tut_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/user/ros2_ws2/install/tut_interface/lib/libtut_interface__rosidl_typesupport_introspection_c.so" to ""\n'}
+[5.003922] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/lib/libtut_interface__rosidl_typesupport_c.so\n'}
+[5.004028] (tut_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/user/ros2_ws2/install/tut_interface/lib/libtut_interface__rosidl_typesupport_c.so" to ""\n'}
+[5.004135] (tut_interface) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws2/install/tut_interface/include/tut_interface\n'}
+[5.004240] (tut_interface) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/srv\n'}
+[5.004345] (tut_interface) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/srv/detail\n'}
+[5.004449] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/srv/detail/add_three_ints__struct.hpp\n'}
+[5.004554] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/srv/detail/add_three_ints__builder.hpp\n'}
+[5.004695] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/srv/detail/add_three_ints__type_support.hpp\n'}
+[5.004824] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/srv/detail/add_three_ints__traits.hpp\n'}
+[5.004929] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/srv/add_three_ints.hpp\n'}
+[5.005034] (tut_interface) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg\n'}
+[5.005138] (tut_interface) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail\n'}
+[5.005244] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail/sphere__traits.hpp\n'}
+[5.005349] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail/num__type_support.hpp\n'}
+[5.005454] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail/sphere__builder.hpp\n'}
+[5.005559] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail/sphere__type_support.hpp\n'}
+[5.005664] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail/num__traits.hpp\n'}
+[5.005728] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail/num__struct.hpp\n'}
+[5.005769] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail/sphere__struct.hpp\n'}
+[5.005811] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail/num__builder.hpp\n'}
+[5.005858] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[5.005900] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/num.hpp\n'}
+[5.005942] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/sphere.hpp\n'}
+[5.005984] (tut_interface) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws2/install/tut_interface/include/tut_interface\n'}
+[5.006025] (tut_interface) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/srv\n'}
+[5.006072] (tut_interface) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/srv/detail\n'}
+[5.006114] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/srv/detail/add_three_ints__type_support.cpp\n'}
+[5.006155] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/srv/detail/add_three_ints__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.006197] (tut_interface) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg\n'}
+[5.006239] (tut_interface) StdoutLine: {'line': b'-- Up-to-date: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail\n'}
+[5.006280] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail/num__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.006321] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail/num__type_support.cpp\n'}
+[5.006363] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail/sphere__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.006404] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/include/tut_interface/msg/detail/sphere__type_support.cpp\n'}
+[5.006445] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/lib/libtut_interface__rosidl_typesupport_introspection_cpp.so\n'}
+[5.006491] (tut_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/user/ros2_ws2/install/tut_interface/lib/libtut_interface__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[5.006533] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/lib/libtut_interface__rosidl_typesupport_cpp.so\n'}
+[5.006574] (tut_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/user/ros2_ws2/install/tut_interface/lib/libtut_interface__rosidl_typesupport_cpp.so" to ""\n'}
+[5.006618] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/environment/pythonpath.sh\n'}
+[5.006661] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/environment/pythonpath.dsv\n'}
+[5.006706] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/lib/python3.8/site-packages/tut_interface/__init__.py\n'}
+[5.010079] (-) TimerEvent: {}
+[5.031414] (tut_interface) StdoutLine: {'line': b"Compiling '/home/user/ros2_ws2/install/tut_interface/lib/python3.8/site-packages/tut_interface/__init__.py'...\n"}
+[5.034557] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/lib/python3.8/site-packages/tut_interface/msg\n'}
+[5.034944] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/lib/python3.8/site-packages/tut_interface/msg/_num_s.c\n'}
+[5.035188] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/lib/python3.8/site-packages/tut_interface/msg/__init__.py\n'}
+[5.035361] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/lib/python3.8/site-packages/tut_interface/msg/_num.py\n'}
+[5.035499] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/lib/python3.8/site-packages/tut_interface/msg/_sphere_s.c\n'}
+[5.035634] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/lib/python3.8/site-packages/tut_interface/msg/_sphere.py\n'}
+[5.035743] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/lib/python3.8/site-packages/tut_interface/srv\n'}
+[5.035832] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/lib/python3.8/site-packages/tut_interface/srv/__init__.py\n'}
+[5.035897] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/lib/python3.8/site-packages/tut_interface/srv/_add_three_ints.py\n'}
+[5.035943] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/lib/python3.8/site-packages/tut_interface/srv/_add_three_ints_s.c\n'}
+[5.036108] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/lib/python3.8/site-packages/tut_interface/tut_interface_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[5.037357] (tut_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/user/ros2_ws2/install/tut_interface/lib/python3.8/site-packages/tut_interface/tut_interface_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[5.038069] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/lib/python3.8/site-packages/tut_interface/tut_interface_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[5.038997] (tut_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/user/ros2_ws2/install/tut_interface/lib/python3.8/site-packages/tut_interface/tut_interface_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[5.039317] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/lib/python3.8/site-packages/tut_interface/tut_interface_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[5.040141] (tut_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/user/ros2_ws2/install/tut_interface/lib/python3.8/site-packages/tut_interface/tut_interface_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[5.040403] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/lib/libtut_interface__python.so\n'}
+[5.040965] (tut_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/user/ros2_ws2/install/tut_interface/lib/libtut_interface__python.so" to ""\n'}
+[5.041258] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/msg/Num.idl\n'}
+[5.041568] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/msg/Sphere.idl\n'}
+[5.041859] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/srv/AddThreeInts.idl\n'}
+[5.042092] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/msg/Num.msg\n'}
+[5.042279] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/msg/Sphere.msg\n'}
+[5.042443] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/srv/AddThreeInts.srv\n'}
+[5.042661] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/srv/AddThreeInts_Request.msg\n'}
+[5.042903] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/srv/AddThreeInts_Response.msg\n'}
+[5.043247] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/ament_index/resource_index/package_run_dependencies/tut_interface\n'}
+[5.043633] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/ament_index/resource_index/parent_prefix_path/tut_interface\n'}
+[5.043896] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/environment/ament_prefix_path.sh\n'}
+[5.044107] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/environment/ament_prefix_path.dsv\n'}
+[5.044327] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/environment/path.sh\n'}
+[5.044571] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/environment/path.dsv\n'}
+[5.044921] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/local_setup.bash\n'}
+[5.045154] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/local_setup.sh\n'}
+[5.045401] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/local_setup.zsh\n'}
+[5.045605] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/local_setup.dsv\n'}
+[5.045831] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/package.dsv\n'}
+[5.045966] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/ament_index/resource_index/packages/tut_interface\n'}
+[5.046120] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/cmake/tut_interface__rosidl_generator_cExport.cmake\n'}
+[5.046271] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/cmake/tut_interface__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.046418] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/cmake/tut_interface__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.046534] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/cmake/tut_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.046702] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/cmake/tut_interface__rosidl_typesupport_cExport.cmake\n'}
+[5.046815] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/cmake/tut_interface__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.046929] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/cmake/tut_interface__rosidl_generator_cppExport.cmake\n'}
+[5.047100] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/cmake/tut_interface__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.047220] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/cmake/tut_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.047335] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/cmake/tut_interface__rosidl_typesupport_cppExport.cmake\n'}
+[5.047507] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/cmake/tut_interface__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.047638] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/cmake/rosidl_cmake-extras.cmake\n'}
+[5.047750] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.047922] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.048036] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.048149] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.048261] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.048477] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.048727] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/cmake/tut_interfaceConfig.cmake\n'}
+[5.048837] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/cmake/tut_interfaceConfig-version.cmake\n'}
+[5.048929] (tut_interface) StdoutLine: {'line': b'-- Installing: /home/user/ros2_ws2/install/tut_interface/share/tut_interface/package.xml\n'}
+[5.049942] (tut_interface) CommandEnded: {'returncode': 0}
+[5.110859] (-) TimerEvent: {}
+[5.211534] (-) TimerEvent: {}
+[5.312430] (-) TimerEvent: {}
+[5.413494] (-) TimerEvent: {}
+[5.419452] (tut_interface) JobEnded: {'identifier': 'tut_interface', 'rc': 0}
+[5.420338] (-) EventReactorShutdown: {}

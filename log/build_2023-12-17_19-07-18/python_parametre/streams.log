@@ -1,0 +1,37 @@
+[0.738s] Invoking command in '/home/user/ros2_ws2/src/python_parametre': PYTHONPATH=/home/user/ros2_ws2/build/python_parametre/prefix_override:/home/user/ros2_ws2/install/python_parametre/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/python_parametre build --build-base /home/user/ros2_ws2/build/python_parametre/build install --record /home/user/ros2_ws2/build/python_parametre/install.log --install-scripts $base/lib/python_parametre --single-version-externally-managed
+[0.890s] running egg_info
+[0.890s] creating ../../build/python_parametre/python_parametre.egg-info
+[0.890s] writing ../../build/python_parametre/python_parametre.egg-info/PKG-INFO
+[0.890s] writing dependency_links to ../../build/python_parametre/python_parametre.egg-info/dependency_links.txt
+[0.891s] writing entry points to ../../build/python_parametre/python_parametre.egg-info/entry_points.txt
+[0.891s] writing requirements to ../../build/python_parametre/python_parametre.egg-info/requires.txt
+[0.891s] writing top-level names to ../../build/python_parametre/python_parametre.egg-info/top_level.txt
+[0.900s] writing manifest file '../../build/python_parametre/python_parametre.egg-info/SOURCES.txt'
+[0.929s] reading manifest file '../../build/python_parametre/python_parametre.egg-info/SOURCES.txt'
+[0.929s] writing manifest file '../../build/python_parametre/python_parametre.egg-info/SOURCES.txt'
+[0.930s] running build
+[0.930s] running build_py
+[0.930s] creating /home/user/ros2_ws2/build/python_parametre/build
+[0.930s] creating /home/user/ros2_ws2/build/python_parametre/build/lib
+[0.930s] creating /home/user/ros2_ws2/build/python_parametre/build/lib/python_parametre
+[0.931s] copying python_parametre/parametre_dügüm.py -> /home/user/ros2_ws2/build/python_parametre/build/lib/python_parametre
+[0.931s] copying python_parametre/__init__.py -> /home/user/ros2_ws2/build/python_parametre/build/lib/python_parametre
+[0.931s] running install
+[0.931s] running install_lib
+[0.931s] creating /home/user/ros2_ws2/install/python_parametre/lib/python3.8/site-packages/python_parametre
+[0.931s] copying /home/user/ros2_ws2/build/python_parametre/build/lib/python_parametre/parametre_dügüm.py -> /home/user/ros2_ws2/install/python_parametre/lib/python3.8/site-packages/python_parametre
+[0.932s] copying /home/user/ros2_ws2/build/python_parametre/build/lib/python_parametre/__init__.py -> /home/user/ros2_ws2/install/python_parametre/lib/python3.8/site-packages/python_parametre
+[0.932s] byte-compiling /home/user/ros2_ws2/install/python_parametre/lib/python3.8/site-packages/python_parametre/parametre_dügüm.py to parametre_dügüm.cpython-38.pyc
+[0.933s] byte-compiling /home/user/ros2_ws2/install/python_parametre/lib/python3.8/site-packages/python_parametre/__init__.py to __init__.cpython-38.pyc
+[0.933s] running install_data
+[0.933s] creating /home/user/ros2_ws2/install/python_parametre/share/ament_index
+[0.933s] creating /home/user/ros2_ws2/install/python_parametre/share/ament_index/resource_index
+[0.933s] creating /home/user/ros2_ws2/install/python_parametre/share/ament_index/resource_index/packages
+[0.933s] copying resource/python_parametre -> /home/user/ros2_ws2/install/python_parametre/share/ament_index/resource_index/packages
+[0.934s] copying package.xml -> /home/user/ros2_ws2/install/python_parametre/share/python_parametre
+[0.934s] running install_egg_info
+[0.934s] Copying ../../build/python_parametre/python_parametre.egg-info to /home/user/ros2_ws2/install/python_parametre/lib/python3.8/site-packages/python_parametre-0.0.0-py3.8.egg-info
+[0.935s] running install_scripts
+[0.947s] Installing param_node script to /home/user/ros2_ws2/install/python_parametre/lib/python_parametre
+[0.947s] writing list of installed files to '/home/user/ros2_ws2/build/python_parametre/install.log'
+[0.968s] Invoked command in '/home/user/ros2_ws2/src/python_parametre' returned '0': PYTHONPATH=/home/user/ros2_ws2/build/python_parametre/prefix_override:/home/user/ros2_ws2/install/python_parametre/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/python_parametre build --build-base /home/user/ros2_ws2/build/python_parametre/build install --record /home/user/ros2_ws2/build/python_parametre/install.log --install-scripts $base/lib/python_parametre --single-version-externally-managed

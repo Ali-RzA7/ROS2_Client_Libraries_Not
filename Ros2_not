@@ -3,16 +3,74 @@ WORKSPACE OLUŞTURMA
 
 Workspace için klasör oluşturulur. Oluşturulan paketlerin koyulması içinde workspace klasörüne src adında klasör oluşturulur.
 
-Bağımlılıkları kontrol etmek için 'rosdep install -i --from-path src --rosdistro foxy -y' komutu çalıştırılır. --from-path src parametresinde, src dizini altında yer alan ROS 2 paketlerinin bağımlılıkları yüklenir. --rosdistro foxy parametresinde foxy dağıtmı için bağımlılıklar yükenir.
+Bağımlılıkları kontrol etmek için 'rosdep install -i --from-path src --rosdistro foxy -y' komutu çalıştırılır. --from-path src parametresinde, src dizini altında yer alan ROS 2 paketlerinin bağımlılıkları yüklenir. --rosdistro foxy parametresinde foxy dağıtmı için bağımlılıklar yüklenir.
 
 Projeyi derlemek için 'colcon build' komutu kullanılır. Bu komut paketleri derler. Derleme işlemi sırasında kullanılacak olan çalışma alanı oluşturulur.Derlenen dosyalar ve çalışma zamanı kodları orada depolnır. Derleme işlemi tamamlandığında, çalışma zamanı dosyalarını etkinleştirmek için 'source install/local_setup.bash' komutu kullanılır.
+
+
 
 PAKET OLUŞTURMA
 src klasörü içinde 'ros2 pkg create --build-type ament_python Paketİsmi' komutu çalıştırılır. ament_python, paketin Python dilinde yazılacağını temsil eder. Paketİsmi ve resource klasörlerini, package.xml, setup.cfg ve setup.py dosyalarını oluşturulur. Paketİsmi klasörünün altında kodlar olur. package.xml, paketin meta bilgilerini içeren bir XML dosyasıdır. Paketin adı, sürümü, açıklaması, bağımlılıkları ve diğer meta bilgileri gibi paketle ilgili temel bilgileri içerir. setup.py python paketlerini tanımlamak, dağıtmak ve yüklemek için kullanılır.
 
 'colcon build' ile derlenir. Spesifik bir paketin derlenmesi için 'colcon build --packages-select Paketİsmi' komutu çalıştırılır. Derlenmiş paketi veya projeyi kullanabilmek için 'source install/local_setup.bash' komutu çalıştırılır.
 
-WRİTİNG PUBLİSHER AND SUBSCRİBER(Python)
+
+
+PUBLİSHER ve SUBSCRİBER YAZMA(Python)
 Yazılacak publisher and subscriber kodları paketin altındaki paketin ismindeki klasör altına  yazılır.
+
+
+
+ÖZEL msg ve srv DOSYALARI OLUŞTURMA
+src klasörü içinde 'ros2 pkg create --build-type ament_cmake Paketİsmi' komutu çalıştırılır. Sadece CMake paketi olmalı ama bu hangi tür paketlerde kullanılabileceğini etkilemez.
+
+Workspace>src>Paketİsmi dizinine msg ve srv dosyaları oluşturulur.
+
+
+𝑂̈𝑧𝑒𝑙 𝑂𝑙𝑎𝑟𝑎𝑘
+msg'nin altına Num.msg oluşturuldu. Bu dosyaya veri türü yazıldı. Yine msg'nin altına Sphere.msg oluşturuldu. Burada başka mesaj paketinden mesaj kullanıldı.
+srv'nin altına AddThreeInt.srv oluşturuldu. İstek ve yanıt yapısına sahip.
+
+CMake.txt düzenlendi. Dosya yolları, mesajların bağlı olduğu paketler eklendi.
+
+package.xml dosyası düzenlendi. Başka paketten bağımlı olunan paket yazılır. Build tool bağımlılığı belirtildi, yazılım projesinin derleme sürecinde kullanılan araçlara denir. Çalışma zamanı bağımlılığı belirtildi, paketin çalışma aşamasında mesaj ve servis arabirimlerini kullanabilmek için gereklidir. 
+
+Workspace dizininde colcon build ile paket oluşturulur. 'colcon build --packages-select Paketİsmi' ismi yazılan paketi derler.
+
+
+KULLANMA Num.msg pub/sub
+Python paketinde
+Num.msg oluşturulmuştu. 'from Paketİsmi.msg import Num' ile import edilir. Önceki publiher da 'from std_msgs.msg import String' kullanılmıştı. Subscriber tarafınada aynısı yapılır.
+
+package.xml dosyasına çalışma zamanı bağımlılığına Paketİsmi eklenir.
+
+colcon build ile yine derlenir ve çalıştırılır.
+
+
+KULLANMA AddThreeInt.srv service/client
+Python paketinde
+'from Paketİsmi.srv import AddThreeInts' ile import edilir. Öncekinde 'from example_interfaces.srv import AddTwoInts' kullanılmıştı.
+
+package.xml dosyasına çalışma zamanı bağımlılığına Paketİsmi eklenir.
+
+colcon build ile yine derlenir ve çalıştırılır.
+
+
+
+AYNI PAKETTE KULLANMA
+'ros2 pkg create --build-type ament_cmake Paketİsmi' ile paket oluşturulur. msg klasörü oluşturulup içine msg dosyaları eklenir. CMakeLists.txt dosyası düzenlenir. scripts klasörü oluşturulur. Bunun içine python dosyaları eklenir. package.xml dosyası düzenlenir. Çalıştırılmak istenildiğinde scripts klasörüne gidilir ve 'python3 Dosyaİsmi' çalıştırılır.
+
+
+
+PARAMETRE
+paket oluşturulur, node yazılır. launch klasörü oluşturulur, onun içine launch dosyası oluşturulur.
+
+
+
+ros2doctor
+ROS 2 sistemini ve çalışma ortamını kontrol etmek için kullanılır. Bu araç, ROS 2'nin çeşitli yönlerini kontrol eder ve olası sorunları veya hataları belirleme ve çözme konusunda yardımcı olur.
+
+Bir sistem çlıştırılır. 'ros2 doctor' da çalıştırılır ve sistemi kontrol eder.
+
 
 

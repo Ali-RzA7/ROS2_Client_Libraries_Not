@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/python_parametre/python_parametre.egg-info
+writing ../../build/python_parametre/python_parametre.egg-info/PKG-INFO
+writing dependency_links to ../../build/python_parametre/python_parametre.egg-info/dependency_links.txt
+writing entry points to ../../build/python_parametre/python_parametre.egg-info/entry_points.txt
+writing requirements to ../../build/python_parametre/python_parametre.egg-info/requires.txt
+writing top-level names to ../../build/python_parametre/python_parametre.egg-info/top_level.txt
+writing manifest file '../../build/python_parametre/python_parametre.egg-info/SOURCES.txt'
+reading manifest file '../../build/python_parametre/python_parametre.egg-info/SOURCES.txt'
+writing manifest file '../../build/python_parametre/python_parametre.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/user/ros2_ws2/build/python_parametre/build
+creating /home/user/ros2_ws2/build/python_parametre/build/lib
+creating /home/user/ros2_ws2/build/python_parametre/build/lib/python_parametre
+copying python_parametre/parametre_dügüm.py -> /home/user/ros2_ws2/build/python_parametre/build/lib/python_parametre
+copying python_parametre/__init__.py -> /home/user/ros2_ws2/build/python_parametre/build/lib/python_parametre
+running install
+running install_lib
+creating /home/user/ros2_ws2/install/python_parametre/lib/python3.8/site-packages/python_parametre
+copying /home/user/ros2_ws2/build/python_parametre/build/lib/python_parametre/parametre_dügüm.py -> /home/user/ros2_ws2/install/python_parametre/lib/python3.8/site-packages/python_parametre
+copying /home/user/ros2_ws2/build/python_parametre/build/lib/python_parametre/__init__.py -> /home/user/ros2_ws2/install/python_parametre/lib/python3.8/site-packages/python_parametre
+byte-compiling /home/user/ros2_ws2/install/python_parametre/lib/python3.8/site-packages/python_parametre/parametre_dügüm.py to parametre_dügüm.cpython-38.pyc
+byte-compiling /home/user/ros2_ws2/install/python_parametre/lib/python3.8/site-packages/python_parametre/__init__.py to __init__.cpython-38.pyc
+running install_data
+creating /home/user/ros2_ws2/install/python_parametre/share/ament_index
+creating /home/user/ros2_ws2/install/python_parametre/share/ament_index/resource_index
+creating /home/user/ros2_ws2/install/python_parametre/share/ament_index/resource_index/packages
+copying resource/python_parametre -> /home/user/ros2_ws2/install/python_parametre/share/ament_index/resource_index/packages
+copying package.xml -> /home/user/ros2_ws2/install/python_parametre/share/python_parametre
+running install_egg_info
+Copying ../../build/python_parametre/python_parametre.egg-info to /home/user/ros2_ws2/install/python_parametre/lib/python3.8/site-packages/python_parametre-0.0.0-py3.8.egg-info
+running install_scripts
+Installing param_node script to /home/user/ros2_ws2/install/python_parametre/lib/python_parametre
+writing list of installed files to '/home/user/ros2_ws2/build/python_parametre/install.log'

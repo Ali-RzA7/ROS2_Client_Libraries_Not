@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/python_parametre/python_parametre.egg-info/PKG-INFO
+writing dependency_links to ../../build/python_parametre/python_parametre.egg-info/dependency_links.txt
+writing entry points to ../../build/python_parametre/python_parametre.egg-info/entry_points.txt
+writing requirements to ../../build/python_parametre/python_parametre.egg-info/requires.txt
+writing top-level names to ../../build/python_parametre/python_parametre.egg-info/top_level.txt
+reading manifest file '../../build/python_parametre/python_parametre.egg-info/SOURCES.txt'
+writing manifest file '../../build/python_parametre/python_parametre.egg-info/SOURCES.txt'
+running build
+running build_py
+copying python_parametre/launch.py -> /home/user/ros2_ws2/build/python_parametre/build/lib/python_parametre
+running install
+running install_lib
+copying /home/user/ros2_ws2/build/python_parametre/build/lib/python_parametre/launch.py -> /home/user/ros2_ws2/install/python_parametre/lib/python3.8/site-packages/python_parametre
+byte-compiling /home/user/ros2_ws2/install/python_parametre/lib/python3.8/site-packages/python_parametre/launch.py to launch.cpython-38.pyc
+running install_data
+running install_egg_info
+removing '/home/user/ros2_ws2/install/python_parametre/lib/python3.8/site-packages/python_parametre-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/python_parametre/python_parametre.egg-info to /home/user/ros2_ws2/install/python_parametre/lib/python3.8/site-packages/python_parametre-0.0.0-py3.8.egg-info
+running install_scripts
+Installing param_node script to /home/user/ros2_ws2/install/python_parametre/lib/python_parametre
+writing list of installed files to '/home/user/ros2_ws2/build/python_parametre/install.log'
