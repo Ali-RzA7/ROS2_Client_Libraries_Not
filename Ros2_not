@@ -3,16 +3,22 @@ WORKSPACE OLUŞTURMA
 
 Workspace için klasör oluşturulur. Oluşturulan paketlerin koyulması içinde workspace klasörüne src adında klasör oluşturulur.
 
-Bağımlılıkları kontrol etmek için 'rosdep install -i --from-path src --rosdistro foxy -y' komutu çalıştırılır. --from-path src parametresinde, src dizini altında yer alan ROS 2 paketlerinin bağımlılıkları yüklenir. --rosdistro foxy parametresinde foxy dağıtmı için bağımlılıklar yüklenir.
+Bağımlılıkları kontrol etmek için 'rosdep install -i --from-path src --rosdistro foxy -y' komutu çalıştırılır.
+--from-path src parametresinde, src dizini altında yer alan ROS 2 paketlerinin bağımlılıkları yüklenir. --rosdistro foxy parametresinde foxy dağıtmı için bağımlılıklar yüklenir.
 
-Projeyi derlemek için 'colcon build' komutu kullanılır. Bu komut paketleri derler. Derleme işlemi sırasında kullanılacak olan çalışma alanı oluşturulur.Derlenen dosyalar ve çalışma zamanı kodları orada depolnır. Derleme işlemi tamamlandığında, çalışma zamanı dosyalarını etkinleştirmek için 'source install/local_setup.bash' komutu kullanılır.
+Projeyi derlemek için 'colcon build' komutu kullanılır. Bu komut paketleri derler. Derleme işlemi sırasında kullanılacak olan çalışma alanı oluşturulur.
+Derlenen dosyalar ve çalışma zamanı kodları orada depolnır. Derleme işlemi tamamlandığında, çalışma zamanı dosyalarını etkinleştirmek için 'source install/local_setup.bash' komutu kullanılır.
 
 
 
 PAKET OLUŞTURMA
-src klasörü içinde 'ros2 pkg create --build-type ament_python Paketİsmi' komutu çalıştırılır. ament_python, paketin Python dilinde yazılacağını temsil eder. Paketİsmi ve resource klasörlerini, package.xml, setup.cfg ve setup.py dosyalarını oluşturulur. Paketİsmi klasörünün altında kodlar olur. package.xml, paketin meta bilgilerini içeren bir XML dosyasıdır. Paketin adı, sürümü, açıklaması, bağımlılıkları ve diğer meta bilgileri gibi paketle ilgili temel bilgileri içerir. setup.py python paketlerini tanımlamak, dağıtmak ve yüklemek için kullanılır.
+src klasörü içinde 'ros2 pkg create --build-type ament_python Paketİsmi' komutu çalıştırılır. ament_python, paketin Python dilinde yazılacağını temsil eder. 
+Paketİsmi ve resource klasörlerini, package.xml, setup.cfg ve setup.py dosyalarını oluşturulur. Paketİsmi klasörünün altında kodlar olur. package.xml, 
+paketin meta bilgilerini içeren bir XML dosyasıdır. Paketin adı, sürümü, açıklaması, bağımlılıkları ve diğer meta bilgileri gibi paketle ilgili temel bilgileri içerir. 
+setup.py python paketlerini tanımlamak, dağıtmak ve yüklemek için kullanılır.
 
-'colcon build' ile derlenir. Spesifik bir paketin derlenmesi için 'colcon build --packages-select Paketİsmi' komutu çalıştırılır. Derlenmiş paketi veya projeyi kullanabilmek için 'source install/local_setup.bash' komutu çalıştırılır.
+'colcon build' ile derlenir. Spesifik bir paketin derlenmesi için 'colcon build --packages-select Paketİsmi' komutu çalıştırılır. 
+Derlenmiş paketi veya projeyi kullanabilmek için 'source install/local_setup.bash' komutu çalıştırılır.
 
 
 
@@ -33,7 +39,8 @@ srv'nin altına AddThreeInt.srv oluşturuldu. İstek ve yanıt yapısına sahip.
 
 CMake.txt düzenlendi. Dosya yolları, mesajların bağlı olduğu paketler eklendi.
 
-package.xml dosyası düzenlendi. Başka paketten bağımlı olunan paket yazılır. Build tool bağımlılığı belirtildi, yazılım projesinin derleme sürecinde kullanılan araçlara denir. Çalışma zamanı bağımlılığı belirtildi, paketin çalışma aşamasında mesaj ve servis arabirimlerini kullanabilmek için gereklidir. 
+package.xml dosyası düzenlendi. Başka paketten bağımlı olunan paket yazılır. Build tool bağımlılığı belirtildi, yazılım projesinin derleme sürecinde kullanılan araçlara denir.
+Çalışma zamanı bağımlılığı belirtildi, paketin çalışma aşamasında mesaj ve servis arabirimlerini kullanabilmek için gereklidir. 
 
 Workspace dizininde colcon build ile paket oluşturulur. 'colcon build --packages-select Paketİsmi' ismi yazılan paketi derler.
 
@@ -58,7 +65,8 @@ colcon build ile yine derlenir ve çalıştırılır.
 
 
 AYNI PAKETTE KULLANMA
-'ros2 pkg create --build-type ament_cmake Paketİsmi' ile paket oluşturulur. msg klasörü oluşturulup içine msg dosyaları eklenir. CMakeLists.txt dosyası düzenlenir. scripts klasörü oluşturulur. Bunun içine python dosyaları eklenir. package.xml dosyası düzenlenir. Çalıştırılmak istenildiğinde scripts klasörüne gidilir ve 'python3 Dosyaİsmi' çalıştırılır.
+'ros2 pkg create --build-type ament_cmake Paketİsmi' ile paket oluşturulur. msg klasörü oluşturulup içine msg dosyaları eklenir. CMakeLists.txt dosyası düzenlenir. 
+scripts klasörü oluşturulur. Bunun içine python dosyaları eklenir. package.xml dosyası düzenlenir. Çalıştırılmak istenildiğinde scripts klasörüne gidilir ve 'python3 Dosyaİsmi' çalıştırılır.
 
 
 
